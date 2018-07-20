@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  pump: boolean = false;
+  valve: boolean = false;
+  waterLevel: boolean = false;
 }
