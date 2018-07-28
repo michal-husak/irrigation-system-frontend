@@ -6,6 +6,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import 'hammerjs';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import 'hammerjs';
     BrowserModule,
     MatSlideToggleModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

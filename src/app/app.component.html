@@ -1,20 +1,20 @@
 <h1 class="mat-display-1">IRRIGATION SYSTEM</h1>
 <mat-list>
   <mat-list-item>
-    <mat-slide-toggle class="example-margin" [checked]="pump">
+    <mat-slide-toggle class="example-margin" [checked]="irrigation.pump" (change)="pumpChanged()">
       Pump
     </mat-slide-toggle>
   </mat-list-item>
   <mat-divider></mat-divider>
   <mat-list-item>
-    <mat-slide-toggle class="example-margin" [checked]="valve">
+    <mat-slide-toggle class="example-margin" [checked]="irrigation.valve" (change)="valveChanged()">
       Valve
     </mat-slide-toggle>
   </mat-list-item>
   <mat-divider></mat-divider>
   <mat-list-item>
-    <mat-slide-toggle class="example-margin" [checked]="waterLevel" disabled>
-      Water tank is full
+    <mat-slide-toggle class="example-margin" [checked]="irrigation.waterLevel" disabled>
+      Water tank is <span *ngIf="irrigation.waterLevel">full</span><span *ngIf="!irrigation.waterLevel">empty</span>
     </mat-slide-toggle>
   </mat-list-item>
 </mat-list>
