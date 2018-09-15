@@ -15,6 +15,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.getAll();
+    setInterval(x => {
+      this.getAll();
+    }, 5000);
   }
 
   pumpChanged() {
