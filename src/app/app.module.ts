@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-import 'hammerjs';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
