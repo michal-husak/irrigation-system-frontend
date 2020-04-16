@@ -12,8 +12,8 @@ const httpOptions = {
 })
 export class IrrigationService {
 
-  //private URL = 'http://192.168.1.8:7999';
-  private URL = 'http://chopinstrasse.hopto.org:7999';
+  private URL = 'http://192.168.1.11:7999';
+  //private URL = 'http://chopinstrasse.hopto.org:7999';
   //private URL = 'http://private-516851-irrigation1.apiary-mock.com';
 
   constructor(private http: HttpClient) { }
